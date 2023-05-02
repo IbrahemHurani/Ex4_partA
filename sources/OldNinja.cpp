@@ -1,6 +1,5 @@
 #include"Character.hpp"
 #include"OldNinja.hpp"
-#include"Cowboy.hpp"
 using namespace std;
 namespace ariel{
     OldNinja::OldNinja(){
