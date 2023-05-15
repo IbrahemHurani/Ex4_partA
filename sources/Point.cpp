@@ -30,5 +30,8 @@ namespace ariel
         Point P;
         return P;
     }
+    string Point::convert_ToString(){
+        return "("+to_string(this->x)+","+to_string(this->y)+")";
+    }
 
 };
