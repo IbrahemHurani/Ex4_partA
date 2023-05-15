@@ -21,7 +21,7 @@ namespace ariel
         double distance(const Point &otherP);
         void print();
         Point movetowrds(const Point &source,const Point &target,double);
-        
+        string convert_ToString();
 
 
     };
