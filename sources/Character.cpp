@@ -19,7 +19,7 @@ namespace ariel{
     }
     string Character::print(){
         if(this->isAlive()){
-            return "Name:"+this->getName()+",Location ";
+            return "Name:"+this->getName()+",Location "+this->Location.convert_ToString();
         }
         return this->getName();
 
