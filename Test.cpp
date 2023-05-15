@@ -102,11 +102,16 @@ TEST_CASE("CHECK CLASS TEAM")
         Point a(2.2125 * j * 2, 5.113 * j);
         Cowboy *temp = new Cowboy(name, a);
         CHECK_NOTHROW(new Team(temp));
-        Team *lead=new Team(temp);
-        CHECK_NOTHROW(lead->print());
+        Team lead(temp);
+        CHECK_NOTHROW(lead.print());
+        CHECK_NOTHROW(lead.add(new YoungNinja("kil", a)));
+
+        TrainedNinja *TempNinja = new TrainedNinja("fight", Point(12.2 * j, 4.212222));
+        Team lead2(TempNinja);
+        CHECK_NOTHROW(lead.attack(&lead2));
+        CHECK(lead2.stillAlive()==0);
         
 
-        
-        
+
     }
 }
