@@ -21,7 +21,7 @@ namespace ariel
         string print();
         double distance(const Character *other);
         bool isAlive();
-        void hit();
+        void hit(int damage);
     };
 
 }
