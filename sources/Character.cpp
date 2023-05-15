@@ -24,7 +24,7 @@ namespace ariel{
         return this->getName();
 
     }
-    void Character::hit(){
+    void Character::hit(int damage){
 
     }
     bool Character::isAlive(){
